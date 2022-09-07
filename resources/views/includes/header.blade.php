@@ -3,11 +3,14 @@
       <img class="header-logo" src="../assets/img/dc-logo.png" alt="Logo dc">
       <nav class="header-nav">
         <ul>
+          @foreach ($header_links as $link)
           <li>
-          ASDASDASD
+            {{ $link }}
           </li>
+          @endforeach
         </ul>
       </nav>
+      <input class="ms_searchbar" type="text" placeholder="search">
     </div>
     <div class="hero-container">
     </div>

@@ -25,10 +25,12 @@ var_dump($comics);
 
 <div class="buy-comics">
     <div class="container d-flex justify-content-between align-items-center px-5">
+        @foreach ($buy_comics as $icon)
         <div>
-            <img class="logos-buy-comics" src="dsad" alt="">
-            <a href="#" class="text-white text-decoration-none"> dsad</a>
+            <img class="logos-buy-comics" src="{{ $icon->urlImg }}" alt="">
+            <a href="#" class="text-white text-decoration-none">{{ $icon->text}}</a>
         </div>
+        @endforeach    
     </div>           
 </div>
 
