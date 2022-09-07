@@ -6,24 +6,39 @@
                 <div>
                     <ul>
                         <h3 class="text-white">DC COMICS</h3>
-                        <li>dasds</li>
-                        <li>dasda</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        @foreach ($dc_comics_link as $link)
+                            <li>
+                                <a href="#">{{ $link['text']}}</a>
+                            </li>
+                        @endforeach
                     </ul>
                     <ul>
                         <h3 class="text-white">SHOP</h3>
+                        @foreach ($dc_comics_link as $link)
+                            <li>
+                                <a href="#">{{ $link['text']}}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="px-3">
                     <ul>
                         <h3 class="text-white">DC</h3>
+                        @foreach ($dc_info as $link)
+                            <li>
+                                <a href="#">{{ $link['text']}}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div>
                     <ul>
                         <h3 class="text-white">SITES</h3>
+                        @foreach ($dc_comics_link as $link)
+                            <li>
+                                <a href="#">{{ $link['text']}}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -34,7 +49,7 @@
     </div>
 </div>
 
-<div class="low-footer-container py-5">
+<div class="low-footer-container py-4">
     <div class="container d-flex justify-content-between align-items-center">
         <a href="#" class="sign-up-btn"> SIGN-UP NOW</a>
         <div class="d-flex align-items-center social-container">

@@ -24,6 +24,118 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $dcComicsList=[
+            [
+                'text' => 'Characters',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Comics',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Movies',
+                'url' => '#',
+            ],
+            [
+                'text' => 'TV',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Games',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Videos',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ]
+        ];
+
+        $shop_list = [
+            [
+                'text' => 'Shop Dc',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Cose a caso',
+                'url' => '#',
+            ]
+        ];
+             
+        $dc_info = [
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],              
+        ];
+
+        $external_site = [
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ],
+            [
+                'text' => 'News',
+                'url' => '#',
+            ]
+        ];
+
         $buy_comics=[
             [
                 'text' => 'DIGITAL COMICS',
@@ -51,5 +163,7 @@ class AppServiceProvider extends ServiceProvider
         $header_links=['CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS','SHOP'];
         View::share('header_links',$header_links);
         View::share('buy_comics',$buy_comics);
+        View::share('dc_comics_link',$dcComicsList);
+        View::share('dc_info',$dc_info);
     }
 }
