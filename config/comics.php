@@ -28,3 +28,4 @@ return [
 	new Comic("Catwoman Vol. 1: Copycats", "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/gn-covers/2019/04/CTWv1_CC_144-001_HD_5ca5299a751963.53054221.jpg?itok=ooPaoLDq", "graphic novel"),
 ];
 
+
