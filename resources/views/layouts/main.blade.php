@@ -12,5 +12,6 @@
     <h1>
         Pasta
     </h1>
+    @include ('includes.footer');
 </body>
 </html>

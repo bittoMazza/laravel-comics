@@ -1,8 +1,8 @@
 //
-@import './variables.scss';
+@import '../sass/variables.scss';
 @import '~bootstrap/scss/bootstrap.scss';
 
-
+/* Header Style */
 .nav-container{
     height: 120px;
   }
@@ -33,6 +33,53 @@
   }
 }
 
+
 .header-logo{
   height: 80px;
 }
+
+/* Top Footer Style */
+.top-footer-container{
+    background-image:url("../assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  ul li{
+    list-style: none;
+
+    a{
+            color: rgb(129, 129, 129);
+            text-decoration: none;
+    }
+  }
+
+  .logo-dc-bg{
+    margin:-100px 0;
+    z-index: 0;
+  }
+}
+
+
+
+/* Low Footer Style */
+.low-footer-container{
+    background-color: $bottomFooter;
+    position: relative;
+
+    .sign-up-btn{
+      padding: 10px 15px;
+      text-decoration: none;
+      color:white;
+      border: 2px solid $mainColor;
+    }
+
+    span{
+      color: $mainColor;
+      margin-right: 20px;
+      font-size: 25px;
+    }
+
+    .social-container a{
+      margin:0 10px
+    }
+  }
