@@ -27,23 +27,23 @@ class AppServiceProvider extends ServiceProvider
         $buy_comics=[
             [
                 'text' => 'DIGITAL COMICS',
-                'urlImg' => 'http://localhost:8080/img/buy-comics-digital-comics.png',
+                'urlImg' => '../assets/img/buy-comics-digital-comics.png',
             ],
             [
                 'text' =>'DC MERCHANDISE',
-                'urlImg' =>'http://localhost:8080/img/buy-comics-merchandise.png',
+                'urlImg' =>'../assets/img/buy-comics-merchandise.png',
             ],
             [
                 'text' =>'SUBSCRIPTION',
-                'urlImg' =>'http://localhost:8080/img/buy-comics-shop-locator.png',
+                'urlImg' =>'../assets/img/buy-comics-subscriptions.png',
             ],
             [
                 'text' =>'COMIC SHOP LOCATOR',
-                'urlImg' =>'http://localhost:8080/img/buy-comics-subscriptions.png',
+                'urlImg' =>'../assets/img/buy-comics-shop-locator.png',
             ],
             [
                 'text' =>'DC POWER VISA',
-                'urlImg' =>'http://localhost:8080/img/buy-dc-power-visa.svg',
+                'urlImg' =>'../assets/img/buy-comics-merchandise.png',
             ],
 
 
