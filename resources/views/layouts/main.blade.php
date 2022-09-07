@@ -8,10 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    @include ('includes.header');
-    <h1>
-        Pasta
-    </h1>
-    @include ('includes.footer');
+    @include ('includes.header')
+
+    <main>
+        @yield('main-content')
+    </main>
+
+    @include ('includes.footer')
 </body>
 </html>

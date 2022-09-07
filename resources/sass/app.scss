@@ -38,6 +38,78 @@
   height: 80px;
 }
 
+.buy-comics{
+  padding: 50px 0;
+  background-color: $mainColor;
+}
+.logos-buy-comics{
+  height: 40px;
+  margin-right: 10px;
+}
+
+.series-card{
+  width: calc((100%/ 6) - 30px );
+  margin: 0 15px 20px 15px;
+  .container-card-image{
+      &:hover .price-container{
+          display: inline-block;
+      }
+  }
+
+  .price-container{
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: $mainColor;
+      opacity: 0.9;
+      font-size: 22px;
+  }
+  .card-image{
+      width:180px;
+      height:180px;
+      object-fit: cover;     
+      object-position: top; 
+  }
+   .card-title{
+      color:white;
+      font-size: 12px;
+      text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+.series-card{
+width: calc((100% / 4) - 30px);
+}
+}
+
+.wrapper{
+  background-color: rgb(26, 26, 26);
+  padding-top: 40px;
+  padding-bottom: 20px;
+.load-more-btn{
+  background-color: $mainColor;
+  color: white;
+  font-weight: bold;
+  padding: 5px 50px;
+}
+.current-series-title{
+  position: absolute;
+  top: -60px;
+  left: 27px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: white;
+  background-color: $mainColor;
+}
+}
+
 /* Top Footer Style */
 .top-footer-container{
     background-image:url("../assets/img/footer-bg.jpg");
@@ -59,7 +131,17 @@
   }
 }
 
+main{
+  position: relative;
+  z-index: 1;
+}
 
+/* Hero Style */
+.hero-container{
+    height: 300px;
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-size: cover;
+}
 
 /* Low Footer Style */
 .low-footer-container{

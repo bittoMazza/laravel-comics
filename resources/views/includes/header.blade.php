@@ -9,4 +9,6 @@
         </ul>
       </nav>
     </div>
+    <div class="hero-container">
+    </div>
   </header>
