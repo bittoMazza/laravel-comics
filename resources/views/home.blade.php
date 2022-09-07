@@ -1,24 +1,25 @@
 @extends('layouts.main')
 
 @section('main-content')
-@php
-var_dump($data);
-@endphp
+<!-- @php
+var_dump($comics);
+@endphp -->
 <div class="wrapper"> 
     <div class="container py-3 d-flex flex-wrap position-relative">
         <span class="current-series-title"> CURRENT SERIES </span>
+        @foreach ($comics as  $comic)
         <div class="series-card">
             <div href="#" class="container-card-image position-relative" >
-                <span class="price-container">  </span>
-                <img class="card-image" src="urlImage" alt="seriesName">
+                <img class="card-image" src="{{$comic->image}}" alt="seriesName">
             </div>
             <div>
-                <span class="card-title"> Nome </span>
+                <span class="card-title">{{$comic->title}}</span>
             </div>
         </div>
-        <div class="text-center"> 
+        @endforeach
+    </div>
+    <div class="text-center"> 
             <button class="load-more-btn"> LOAD MORE </button>
-         </div>
     </div>
 </div>
 
