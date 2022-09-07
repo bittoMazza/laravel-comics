@@ -1,0 +1,38 @@
+//
+@import './variables.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+.nav-container{
+    height: 120px;
+  }
+  .header-nav ul{
+    margin: 0;
+  li{
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+    margin:0 10px;
+    padding: 45px 0;
+
+  
+   &:hover{
+     box-shadow: 0 4px 0 0px $mainColor;
+   }
+
+   &:hover a{
+        color: $mainColor;
+      }
+
+     a{
+        text-decoration: none;
+        color: black;
+      }
+    
+  }
+}
+
+.header-logo{
+  height: 80px;
+}
